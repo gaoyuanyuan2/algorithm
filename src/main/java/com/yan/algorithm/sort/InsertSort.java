@@ -10,7 +10,7 @@ public class InsertSort {
             int j;
             for (j = i - 1; j >= 0; j--) {//从标为1的位置开始比较，第一个跳过
                 if (tem < array[j]) {
-                    array[j + 1] = array[j];//全部排序好的数组后移动
+                    array[j + 1] = array[j];//全部排序好的数组后移动，空间复杂度高，全部后移。
                 } else {
                     break;
                 }
